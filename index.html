@@ -103,8 +103,29 @@
 
 								<p><span class="image left"><img src="images/speaker-lin.jpg" alt="Chih-Jen Lin" /></span>
 								<b>Chih-Jen Lin</b>, National Taiwan University <br /> 
-								<b>Title:</b> TBA <br /> 
-								<b>Abstract:</b> TBA <br /> 
+								<b>Title:</b> MF (Matrix Factorization) and FM (Factorization Machines) for Recommender Systems<br /> 
+								<b>Abstract:</b> MF (Matrix Factorization) and FM (Factorization Machines) are both
+								effective methods for Recommender Systems. In the first part of this
+								talk, we focus on MF that assumes the ratings from users to items are
+								the only given information. We discuss our recent efforts in
+								developing a parallel package LIBMF for shared-memory
+								systems. Currently, stochastic gradient (SG) method is one of the most
+								popular algorithms to solve the optimization problem for MF. However,
+								as a sequential approach, SG is difficult to be parallelized. We
+								carefully reduce the cache-miss rate and address the load balance of
+								threads to have an effective parallel SG implementation. Further,
+								because the performance of SG highly depends on the setting of
+								learning rates, we develop some adaptive approaches to achieve fast
+								and stable convergence. Experiments show that our implementation
+								outperforms available parallel matrix factorization packages. In the
+								second part of the talk, we consider situations where some user or
+								item features are also available. FM (Factorization Machines) is a
+								useful model in such situations. Recently an extension of FM called
+								FFM (Field-aware FM) has been shown to be very effective for CTR
+								predictions in computational advertising. We discuss our group
+								members' winning approaches for two Kaggle competitions on CTR
+								predictions. Our work has been released in another package LIBFFM for
+							public use.	<br /> 
 								<b>Bio: </b> Chih-Jen Lin is currently a distinguished professor at the Department
 								of Computer Science, National Taiwan University. He obtained his
 								B.S. degree from National Taiwan University in 1993 and Ph.D. degree
